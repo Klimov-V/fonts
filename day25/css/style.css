@@ -36,7 +36,7 @@ p {
 p:last-of-type {
   margin-bottom: 40px;
 }
-.article__firstLeter {
+.article p:first-of-type:first-letter {
   font-size: 11rem;
   line-height: 11rem;
   float: left;
@@ -50,9 +50,13 @@ p:last-of-type {
   clear: both;
 }
 .quote {
+  font-family: 'Lato', serif;
   font-size: 2.4rem;
+  font-weight: 300;
+  padding-bottom: 45px;
 }
-.quote__quotes {
+.quote:before {
+  content: '" ';
   font-size: 6rem;
 }
 .btn {
